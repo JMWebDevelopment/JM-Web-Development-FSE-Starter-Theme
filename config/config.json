@@ -1,0 +1,8 @@
+{
+  "theme": {
+    "slug": "jm-web-dev-fse-starter-theme",
+    "name": "JM Web Development FSE Starter Theme",
+    "author": "Jacob Martella Web Development",
+    "PHPNamespace": "JM_Web_Development\\JM_Web_Dev_FSE_Starter_Theme"
+  }
+}
