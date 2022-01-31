@@ -57,7 +57,8 @@ function jm_web_dev_fse_starter_theme_register_block_patterns() {
 	}
 
 	$block_patterns = array(
-		
+		'footer/default-footer',
+		'header/default-header',
 	);
 
 	/**
