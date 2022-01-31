@@ -16,6 +16,6 @@ return array(
 					
 					<!-- wp:site-title {"textAlign":"center"} /-->
 					
-					<!-- wp:navigation {"ref":2080,"layout":{"type":"flex","justifyContent":"center"}} /--></div>
+					<!-- wp:navigation {"layout":{"type":"flex","justifyContent":"center"}} /--></div>
 					<!-- /wp:group -->',
 );
