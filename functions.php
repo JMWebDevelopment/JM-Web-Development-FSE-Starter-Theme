@@ -79,6 +79,14 @@ function jm_web_dev_fse_starter_theme_fonts_url() {
 	return esc_url_raw( 'https://fonts.googleapis.com/css2?' . implode( '&', array_unique( $fonts ) ) . '&display=swap' );
 }
 
+function jm_web_dev_fse_starter_theme_search_title() {
+	if ( isset( $_GET['s'] ) ) {
+		$search_term = sanitize_text_field( wp_unslash( $_GET['s'] ) );
+		/* translators: %s: Search term. */
+		return isset( $search_term ) ? sprintf( esc_html__( 'Search results for "%s"', 'jm-web-dev-fse-starter-theme' ), esc_html( $search_term ) ) : __( 'Search results', 'jm-web-dev-fse-starter-theme' );
+	}
+}
+
 // Include block styles.
 require get_template_directory() . '/inc/block-styles.php';
 

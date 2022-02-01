@@ -25,12 +25,20 @@ function jm_web_dev_fse_starter_theme_register_block_patterns() {
 	}
 
 	$block_pattern_categories = array(
+		'jm-web-dev-fse-starter-theme-404'  => array(
+			'label'         => __( '404', 'jm-web-dev-fse-starter-theme' ),
+			'categoryTypes' => array( 'jm-web-dev-fse-starter-theme' ),
+		),
 		'jm-web-dev-fse-starter-theme-footer'  => array(
 			'label'         => __( 'Footer', 'jm-web-dev-fse-starter-theme' ),
 			'categoryTypes' => array( 'jm-web-dev-fse-starter-theme' ),
 		),
 		'jm-web-dev-fse-starter-theme-header'  => array(
 			'label'         => __( 'Header', 'jm-web-dev-fse-starter-theme' ),
+			'categoryTypes' => array( 'jm-web-dev-fse-starter-theme' ),
+		),
+		'jm-web-dev-fse-starter-theme-search'  => array(
+			'label'         => __( 'Search', 'jm-web-dev-fse-starter-theme' ),
 			'categoryTypes' => array( 'jm-web-dev-fse-starter-theme' ),
 		),
 	);
@@ -59,6 +67,8 @@ function jm_web_dev_fse_starter_theme_register_block_patterns() {
 	$block_patterns = array(
 		'footer/default-footer',
 		'header/default-header',
+		'search/default-search',
+		'404/default-404',
 	);
 
 	/**
