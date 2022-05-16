@@ -27,6 +27,7 @@
 !/optional/
 !/templates/
 !/parts/
+!/patterns/
 
 !.babelrc
 !composer.json
