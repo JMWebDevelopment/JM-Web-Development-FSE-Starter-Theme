@@ -46,14 +46,14 @@ export const PHPCSOptions = {
 
 // Theme config name fields and their defaults
 export const nameFieldDefaults = {
-	author: 'The WP Rig Contributors',
-	PHPNamespace: 'WP_Rig\\WP_Rig',
-	slug: 'wp-rig',
-	name: 'WP Rig',
-	underscoreCase: 'wp_rig',
-	constant: 'WP_RIG',
-	camelCase: 'WpRig',
-	camelCaseVar: 'wpRig',
+	author: 'Jacob Martella Web Development',
+	PHPNamespace: 'JM_Web_Development\\JM_Web_Dev_FSE_Starter_Theme',
+	slug: 'jm-web-dev-fse-starter-theme',
+	name: 'JM Web Development FSE Starter Theme',
+	underscoreCase: 'jm_web_dev_fse_starter_theme',
+	constant: 'JM_WEB_DEV_FSE_STARTER_THEME',
+	camelCase: 'JmWebDevFseStarterTheme',
+	camelCaseVar: 'jmWebDevFseStarterTheme',
 };
 
 // Project paths
@@ -74,6 +74,22 @@ const paths = {
 			`!${ rootPath }/optional/**/*.*`,
 			`!${ rootPath }/tests/**/*.*`,
 			`!${ rootPath }/vendor/**/*.*`,
+		],
+		dest: `${ rootPath }/`,
+	},
+	html: {
+		src: [
+			`${ rootPath }/**/*.html`,
+			`!${ rootPath }/optional/**/*.html`,
+			`!${ rootPath }/tests/**/*.html`,
+			`!${ rootPath }/vendor/**/*.html`,
+			`!${ rootPath }/node_modules/**/*.html`,
+		],
+		dest: `${ rootPath }/`,
+	},
+	themeJSON: {
+		src: [
+			`${ rootPath }/theme.json`,
 		],
 		dest: `${ rootPath }/`,
 	},
