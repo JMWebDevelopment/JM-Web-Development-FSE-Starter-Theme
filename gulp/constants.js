@@ -93,6 +93,12 @@ const paths = {
 		],
 		dest: `${ rootPath }/`,
 	},
+	styleJSON: {
+		src: [
+			`${ rootPath }/styles/*.json`,
+		],
+		dest: `${ rootPath }/styles`,
+	},
 	styles: {
 		editorSrc: [
 			`${ assetsDir }/css/src/editor/**/*.css`,
@@ -159,6 +165,9 @@ for ( const filePath of filesToCopy.concat( additionalFilesToCopy ) ) {
 // Override paths for production
 if ( isProd ) {
 	paths.php.dest = `${ prodThemePath }/`;
+	paths.html.dest = `${ prodThemePath }/`;
+	paths.themeJSON.dest = `${ prodThemePath }/`;
+	paths.styleJSON.dest = `${ prodThemePath }/styles/`;
 	paths.styles.dest = `${ prodAssetsDir }/css/`;
 	paths.styles.editorDest = `${ prodAssetsDir }/css/editor/`;
 	paths.scripts.dest = `${ prodAssetsDir }/js/`;

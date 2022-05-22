@@ -26,11 +26,15 @@ export default function html( done ) {
 			src( paths.themeJSON.src ),
 			getStringReplacementTasks(),
 			dest( paths.themeJSON.dest ),
+			src( paths.styleJSON.src ),
+			getStringReplacementTasks(),
+			dest( paths.styleJSON.dest ),
 		], done );
 	}
 
 	// Only run code sniffing in dev, don't save PHP files
 	return pump( [
 		src( paths.themeJSON.src ),
+		src( paths.styleJSON.src ),
 	], done );
 }
