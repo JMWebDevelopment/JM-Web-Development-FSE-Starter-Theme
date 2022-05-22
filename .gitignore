@@ -28,6 +28,7 @@
 !/templates/
 !/parts/
 !/patterns/
+!/styles/
 
 !.babelrc
 !composer.json
