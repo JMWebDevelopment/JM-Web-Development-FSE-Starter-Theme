@@ -147,6 +147,14 @@ const paths = {
 		],
 		dest: `${ rootPath }/languages/${ nameFieldDefaults.slug }.pot`,
 	},
+	blocks: {
+		src: [
+			`${ rootPath }/inc/blocks/**/build/*.{js,json,css}`,
+			`!${ rootPath }/inc/blocks/**/src/**/*.*`,
+			`!${ rootPath }/inc/blocks/**/node_modules/**/*.*`,
+		],
+		dest: `${ rootPath }/inc/blocks/`,
+	},
 	webfonts: {
 		src: `${ assetsDir }/webfonts/*.{eot,svg,ttf,woff,woff2}`,
 		dest: `${ assetsDir }/webfonts/`,
@@ -173,6 +181,7 @@ if ( isProd ) {
 	paths.scripts.dest = `${ prodAssetsDir }/js/`;
 	paths.images.dest = `${ prodAssetsDir }/images/`;
 	paths.webfonts.dest = `${ prodAssetsDir }/webfonts/`;
+	paths.blocks.dest = `${ prodThemePath }/inc/blocks/`;
 	paths.languages = {
 		src: `${ prodThemePath }/**/*.php`,
 		dest: `${ prodThemePath }/languages/${ config.theme.slug }.pot`,
