@@ -1,16 +1,6 @@
 {
 	"version": 2,
 	"$schema": "https://schemas.wp.org/trunk/theme.json",
-	"customTemplates": [
-		{
-			"name": "blank",
-			"title": "Blank"
-		},
-		{
-			"name": "no-title",
-			"title": "No Title"
-		}
-	],
 	"settings": {
 		"appearanceTools": true,
 		"blocks": {
@@ -59,12 +49,12 @@
 				{
 					"name": "Primary and White",
 					"slug": "primary-and-white",
-					"colors": [ "#0000ff", "#ffffff" ]
+					"colors": [ "#343A40", "#ffffff" ]
 				},
 				{
 					"name": "Secondary and White",
 					"slug": "secondary-and-white",
-					"colors": [ "#000099", "#ffffff" ]
+					"colors": [ "#6C757D", "#ffffff" ]
 				}
 			],
 			"gradients": [
@@ -115,9 +105,8 @@
 				"black": 900
 			},
 			"lineHeight": {
-				"body": 1.75,
+				"body": 1.5,
 				"heading": 1.1,
-				"medium": 1.5,
 				"one": 1
 			},
 			"spacing": {
@@ -311,30 +300,30 @@
 				},
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--monospace)",
-					"fontSize": "var(--wp--preset--font-size--small)"
+					"fontSize": "var(--wp--preset--font-size--regular)"
 				}
 			},
 			"core/comment-author-name": {
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--small)",
-					"lineHeight": "var(--wp--custom--line-height--medium)"
+					"fontSize": "var(--wp--preset--font-size--regular)",
+					"lineHeight": "var(--wp--custom--line-height--body)"
 				}
 			},
 			"core/comment-date": {
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--small)",
-					"lineHeight": "var(--wp--custom--line-height--medium)"
+					"fontSize": "var(--wp--preset--font-size--regular)",
+					"lineHeight": "var(--wp--custom--line-height--body)"
 				}
 			},
 			"core/comment-edit-link": {
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--small)",
-					"lineHeight": "var(--wp--custom--line-height--medium)"
+					"fontSize": "var(--wp--preset--font-size--regular)",
+					"lineHeight": "var(--wp--custom--line-height--body)"
 				}
 			},
 			"core/comment-reply-link": {
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--small)"
+					"fontSize": "var(--wp--preset--font-size--regular)"
 				}
 			},
 			"core/comments-title": {
@@ -345,10 +334,14 @@
 					}
 				},
 				"typography": {
-					"fontWeight": "var(--wp--custom--font-weight--regular)"
+					"fontWeight": "var(--wp--custom--font-weight--medium)",
+					"fontSize": "var(--wp--preset--font-size--max-36)"
 				}
 			},
 			"core/cover": {
+				"color": {
+					"text": "var(--wp--preset--color--base)"
+				},
 				"spacing": {
 					"padding": {
 						"bottom": "30px",
@@ -356,11 +349,14 @@
 						"right": "30px",
 						"top": "30px"
 					}
+				},
+				"typography": {
+					"fontWeight": "var(--wp--custom--font-weight--medium)"
 				}
 			},
 			"core/heading": {
 				"typography": {
-					"fontWeight": "var(--wp--custom--font-weight--regular)",
+					"fontWeight": "var(--wp--custom--font-weight--medium)",
 					"lineHeight": "var(--wp--custom--line-height--heading)"
 				}
 			},
@@ -407,10 +403,14 @@
 				},
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--monospace)",
-					"fontSize": "var(--wp--preset--font-size--small)"
+					"fontSize": "var(--wp--preset--font-size--regular)"
 				}
 			},
 			"core/pullquote": {
+				"color": {
+					"background": "var(--wp--preset--color--contrast)",
+					"text": "var(--wp--preset--color--base)"
+				},
 				"border": {
 					"color": "var(--wp--preset--color--contrast)",
 					"style": "solid",
@@ -425,16 +425,22 @@
 					}
 				},
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--medium)"
+					"fontSize": "var(--wp--preset--font-size--large)",
+					"fontWeight": "var(--wp--custom--font-weight--medium)"
 				}
 			},
 			"core/query-title": {
 				"typography": {
-					"fontWeight": "var(--wp--custom--font-weight--regular)",
+					"fontWeight": "var(--wp--custom--font-weight--medium)",
+					"fontSize": "var(--wp--preset--font-size--x-large)",
 					"lineHeight": "var(--wp--custom--line-height--heading)"
 				}
 			},
 			"core/quote": {
+				"color": {
+					"background": "var(--wp--preset--color--contrast)",
+					"text": "var(--wp--preset--color--base)"
+				},
 				"border": {
 					"color": "var(--wp--preset--color--contrast)",
 					"style": "solid",
@@ -494,7 +500,7 @@
 			},
 			"core/table": {
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--small)"
+					"fontSize": "var(--wp--preset--font-size--regular)"
 				}
 			},
 			"core/template-part": {
@@ -539,48 +545,53 @@
 					}
 				},
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--small)"
+					"fontSize": "var(--wp--preset--font-size--regular)"
 				}
 			},
 			"cite": {
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--small)",
+					"fontSize": "var(--wp--preset--font-size--regular)",
 					"fontStyle": "inherit"
 				}
 			},
 			"h1": {
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--max-36)"
+					"fontSize": "var(--wp--preset--font-size--max-60)"
 				}
 			},
 			"h2": {
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--x-large)"
+					"fontSize": "var(--wp--preset--font-size--max-48)"
 				}
 			},
 			"h3": {
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--large)"
+					"fontSize": "var(--wp--preset--font-size--max-36)"
 				}
 			},
 			"h4": {
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--medium)"
+					"fontSize": "var(--wp--preset--font-size--x-large)"
 				}
 			},
 			"h5": {
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--small)"
+					"fontSize": "var(--wp--preset--font-size--large)"
 				}
 			},
 			"h6": {
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--small)"
+					"fontSize": "var(--wp--preset--font-size--medium)"
 				}
 			},
 			"link": {
 				"color": {
-					"text": "var(--wp--preset--color--contrast)"
+					"text": "var(--wp--preset--color--primary)"
+				},
+				":hover": {
+					"color": {
+						"text": "var(--wp--preset--color--secondary)"
+					}
 				}
 			}
 		},
@@ -595,8 +606,8 @@
 		},
 		"typography": {
 			"fontFamily": "var(--wp--preset--font-family--primary)",
-			"fontSize": "var(--wp--preset--font-size--medium)",
-			"fontWeight": "var(--wp--custom--font-weight--light)",
+			"fontSize": "var(--wp--preset--font-size--regular)",
+			"fontWeight": "var(--wp--custom--font-weight--regular)",
 			"lineHeight": "var(--wp--custom--line-height--body)"
 		}
 	},
@@ -610,11 +621,6 @@
 			"area": "footer",
 			"name": "footer",
 			"title": "Footer"
-		},
-		{
-			"area": "uncategorized",
-			"name": "comments",
-			"title": "Comments"
 		}
 	]
 }
